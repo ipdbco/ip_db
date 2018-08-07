@@ -150,7 +150,7 @@ init: Initial Commit
 
 ## Credits
 
-[Torproject](https://check.torproject.org): Tor database
+[Torproject](https://torproject.org): Tor database
 
 [Maxmind](https://www.maxmind.com/en/geoip2-databases): Maxmind database
 
