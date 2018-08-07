@@ -52,7 +52,7 @@ db.get_ip("1.1.1.1")
 ```
 
 Example output `1.1.1.1`
-```json
+```javascript
 {'city': {'geoname_id': 2151718, 'names': {'en': 'Research'}},
  'continent': {'code': 'OC',
   'geoname_id': 6255151,
@@ -92,11 +92,12 @@ Example output `1.1.1.1`
  'subdivisions': [{'geoname_id': 2145234,
    'iso_code': 'VIC',
    'names': {'en': 'Victoria', 'pt-BR': 'Vitória', 'ru': 'Виктория'}}],
- 'threat': {'is_tor': False}}
+ 'threat': {'is_tor': False}
+}
 ```
 
 Example output `8.8.8.8`
-```json
+```javascript
 {'continent': {'code': 'NA',
   'geoname_id': 6255149,
   'names': {'de': 'Nordamerika',
@@ -130,7 +131,8 @@ Example output `8.8.8.8`
    'pt-BR': 'Estados Unidos',
    'ru': 'США',
    'zh-CN': '美国'}},
- 'threat': {'is_tor': False}}
+ 'threat': {'is_tor': False}
+}
  ```
 
 
