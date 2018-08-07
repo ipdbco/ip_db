@@ -26,7 +26,7 @@ class ip_db(object):
             loop.create_task(self.maxmind_db.auto_update_loop())]
         loop.run_until_complete(asyncio.wait(tasks))
 
-    def start_async_loop(self):
+    def run_async_loop(self):
         new_loop = asyncio.new_event_loop()
         t = Thread(target=self.async_loop_worker, args=(new_loop,))
         t.daemon = True
@@ -48,15 +48,6 @@ class ip_db(object):
         :return:dict: a dictionary of the results
         '''
         if self.is_ready:
-            #loop = asyncio.get_event_loop()
-            #tasks = [loop.create_task(self.maxmind_db.get_ip(ip)),
-            #    loop.create_task(self.tor_db.get_ip(ip))]
-            #loop.run_until_complete(asyncio.wait(tasks))
-            ## format results
-            ##maxmind_task, maxmind_results = tasks[0].result
-            ##tor_task, tor_results = tasks[1].result
-            #results = tasks[0].result()
-            #results['threat'] = tasks[1].result()
             results = self.maxmind_db.get_ip(ip)
             results['threat'] = self.tor_db.get_ip(ip)
             return results
