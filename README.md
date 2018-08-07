@@ -151,7 +151,9 @@ init: Initial Commit
 ## Credits
 
 [Torproject](https://check.torproject.org): Tor database
+
 [Maxmind](https://www.maxmind.com/en/geoip2-databases): Maxmind database
+
 [tuangeek](https://github.com/tuangeek): initial coder
 
 ## License
