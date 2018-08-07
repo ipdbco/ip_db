@@ -1,9 +1,9 @@
 import setuptools
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
-with open("LICENSE", "r") as fh:
-    license = fh.read()
+with open("README.md", "rb") as fh:
+    long_description = fh.read().decode('utf-8')
+with open("LICENSE", "rb") as fh:
+    license = fh.read().decode('utf-8')
 
 requirements = [
     'requests',
